@@ -310,10 +310,10 @@
 
         layer_10 {
             bindings = <
-       &trans        &trans        &trans        &trans        &trans          &trans        &trans  &trans        &trans  &trans
+       &trans        &trans        &trans        &kp X         &trans          &trans        &trans  &trans        &trans  &trans
        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp N7  &kp NUMBER_8  &kp N9  &kp NUMBER_0
-&to 0  &trans        &trans        &kp D         &kp M         &trans          &trans        &trans  &trans        &trans  &trans        &trans
-                                   &trans        &kp E         &trans          &trans        &trans  &trans
+&to 0  &trans        &kp A         &kp D         &kp S         &trans          &trans        &trans  &trans        &trans  &trans        &trans
+                                   &trans        &kp M         &kp E           &trans        &trans  &trans
             >;
         };
     };
