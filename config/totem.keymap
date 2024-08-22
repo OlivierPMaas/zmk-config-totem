@@ -403,10 +403,10 @@
         game_layer {
             label = "generic games";
             bindings = <
-       &as W  &as L  &as Y  &as P  &as B        &as Z           &as F            &as O         &as U    &as APOSTROPHE
-       &as C  &as R  &as S  &as T  &as G        &as M           &as N            &as E         &as I    &as A
-&to 0  &as Q  &as J  &as V  &as D  &as K        &as X           &as H            &as COMMA     &as DOT  &as FSLH        &as SEMICOLON
-                     &kp W  &kp B  &kp SPACE    &repeat_mo 5 0  &lt 1 BACKSPACE  &lt 7 DELETE
+       &kp W  &kp L  &kp Y  &kp P  &kp B        &kp Z  &kp F  &kp O      &kp U    &kp APOSTROPHE
+       &kp C  &kp R  &kp S  &kp T  &kp G        &kp M  &kp N  &kp E      &kp I    &kp A
+&to 0  &kp Q  &kp J  &kp V  &kp D  &kp K        &kp X  &kp H  &kp COMMA  &kp DOT  &kp FSLH        &kp SEMICOLON
+                     &kp W  &kp B  &kp SPACE    &kp Z  &kp M  &kp X
             >;
         };
     };
