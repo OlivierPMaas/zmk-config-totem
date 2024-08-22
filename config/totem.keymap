@@ -74,6 +74,11 @@
             bindings = <&tog 9>;
             key-positions = <11 12 13>;
         };
+
+        games {
+            bindings = <&to 10>;
+            key-positions = <1 2 3>;
+        };
     };
 
     macros {
@@ -392,6 +397,16 @@
         &kp LEFT_SHIFT        &kp R  &kp S      &kp T      &kp G        &trans  &kp LEFT_ALT  &kp LEFT_WIN  &kp TAB  &trans
 &trans  &kp LC(LEFT_CONTROL)  &kp J  &kp V      &kp D      &kp K        &trans  &trans        &trans        &trans   &trans  &trans
                                      &kp SPACE  &mkp RCLK  &mkp LCLK    &trans  &trans        &trans
+            >;
+        };
+
+        game_layer {
+            label = "generic games";
+            bindings = <
+       &as W  &as L  &as Y  &as P  &as B        &as Z           &as F            &as O         &as U    &as APOSTROPHE
+       &as C  &as R  &as S  &as T  &as G        &as M           &as N            &as E         &as I    &as A
+&to 0  &as Q  &as J  &as V  &as D  &as K        &as X           &as H            &as COMMA     &as DOT  &as FSLH        &as SEMICOLON
+                     &kp W  &kp B  &kp SPACE    &repeat_mo 5 0  &lt 1 BACKSPACE  &lt 7 DELETE
             >;
         };
     };
