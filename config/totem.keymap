@@ -79,6 +79,11 @@
             bindings = <&to 10>;
             key-positions = <1 2 3>;
         };
+
+        grayscale {
+            bindings = <&kp LG(C)>;
+            key-positions = <17 16 18>;
+        };
     };
 
     macros {
@@ -273,7 +278,7 @@
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <100>;
         };
 
         timeless_hr_r: timeless_hr_r {
@@ -287,7 +292,7 @@
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <100>;
         };
     };
 
