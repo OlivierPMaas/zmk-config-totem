@@ -81,7 +81,7 @@
         };
 
         grayscale {
-            bindings = <&kp LG(C)>;
+            bindings = <&kp LG(LC(C))>;
             key-positions = <17 16 18>;
         };
     };
