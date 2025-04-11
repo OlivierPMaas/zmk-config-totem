@@ -10,10 +10,10 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
 &mt {
@@ -35,16 +35,6 @@
             bindings = <&kp ESC>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <8 9>;
-        };
-
-        i3 {
-            bindings = <&mo_tog 0 0>;
-            key-positions = <19 18>;
-        };
-
         lctrl_del {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <35 36>;
@@ -53,11 +43,6 @@
         idea {
             bindings = <&sl 0>;
             key-positions = <12 11>;
-        };
-
-        StS {
-            bindings = <&tog 8>;
-            key-positions = <20 31>;
         };
 
         copy {
@@ -70,19 +55,9 @@
             key-positions = <2 3>;
         };
 
-        Factorio {
-            bindings = <&tog 9>;
-            key-positions = <11 12 13>;
-        };
-
-        games {
-            bindings = <&to 10>;
-            key-positions = <1 2 3>;
-        };
-
         grayscale {
             bindings = <&kp LG(LC(C))>;
-            key-positions = <17 16 18>;
+            key-positions = <12 11 13>;
         };
     };
 
@@ -276,7 +251,7 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 30 19 9 31 18 29 17 28 16 27 15 26 35 36 37 33>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <100>;
         };
@@ -290,7 +265,7 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <14 3 12 2 11 0 10 11 13 14 20 21 22 23 24 25 32 33 34 1 4>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <100>;
         };
@@ -385,34 +360,6 @@
             >;
 
             label = "numb";
-        };
-
-        StS {
-            bindings = <
-        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &trans  &trans  &trans  &trans  &trans
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5          &trans  &trans  &trans  &trans  &trans
-&trans  &kp X         &kp A         &kp D         &kp S         &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &kp M         &kp E           &trans  &trans  &trans
-            >;
-        };
-
-        Factorio {
-            bindings = <
-        &kp ESCAPE            &kp L  &kp Y      &kp P      &kp B        &trans  &trans        &trans        &trans   &trans
-        &kp LEFT_SHIFT        &kp R  &kp S      &kp T      &kp G        &trans  &kp LEFT_ALT  &kp LEFT_WIN  &kp TAB  &trans
-&trans  &kp LC(LEFT_CONTROL)  &kp J  &kp V      &kp D      &kp K        &trans  &trans        &trans        &trans   &trans  &trans
-                                     &kp SPACE  &mkp RCLK  &mkp LCLK    &trans  &trans        &trans
-            >;
-        };
-
-        game_layer {
-            label = "generic games";
-            bindings = <
-       &kp W  &kp L  &kp Y  &kp P  &kp B        &kp Z  &kp F  &kp O      &kp U    &kp APOSTROPHE
-       &kp C  &kp R  &kp S  &kp T  &kp G        &kp M  &kp N  &kp E      &kp I    &kp A
-&to 0  &kp Q  &kp J  &kp V  &kp D  &kp K        &kp X  &kp H  &kp COMMA  &kp DOT  &kp FSLH        &kp SEMICOLON
-                     &kp W  &kp B  &kp SPACE    &kp Z  &kp M  &kp X
-            >;
         };
     };
 };
