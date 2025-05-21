@@ -59,11 +59,6 @@
             bindings = <&kp LG(LC(C))>;
             key-positions = <11 12 13>;
         };
-
-        power {
-            bindings = <&kp C_POWER>;
-            key-positions = <16 17 18 13 12 11>;
-        };
     };
 
     macros {
