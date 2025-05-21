@@ -61,7 +61,7 @@
         };
 
         power {
-            bindings = <&kp K_POWER>;
+            bindings = <&kp C_POWER>;
             key-positions = <16 17 18 13 12 11>;
         };
     };
