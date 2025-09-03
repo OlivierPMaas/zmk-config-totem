@@ -331,9 +331,9 @@
 
         sym_code {
             bindings = <
-       &kp CARET   &kp LEFT_BRACE              &as COLON           &kp RIGHT_BRACE                 &kp AMPERSAND    &none          &none           &kp UP_ARROW    &none      &none
-       &kp TILDE   &kp LEFT_PARENTHESIS        &as EQUAL           &kp RIGHT_PARENTHESIS           &kp HASH         &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &sk RGUI
-&none  &kp DOLLAR  &mt LESS_THAN LEFT_BRACKET  &as MINUS           &mt GREATER_THAN RIGHT_BRACKET  &kp PIPE         &kp DELETE     &none           &kp DOWN_ARROW  &none      &none     &none
+       &kp CARET   &kp LEFT_BRACE              &as COLON           &kp RIGHT_BRACE                 &kp AMPERSAND    &none          &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN  &none
+       &kp TILDE   &kp LEFT_PARENTHESIS        &as EQUAL           &kp RIGHT_PARENTHESIS           &kp HASH         &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &sk RGUI
+&none  &kp DOLLAR  &mt LESS_THAN LEFT_BRACKET  &as MINUS           &mt GREATER_THAN RIGHT_BRACKET  &kp PIPE         &kp DELETE     &kp HOME        &kp DOWN_ARROW  &kp END        &none     &none
                                                &mt HASH BACKSLASH  &kp TAB                         &kp SPACE        &none          &none           &none
             >;
 
