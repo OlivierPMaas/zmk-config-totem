@@ -309,10 +309,10 @@
 
         sym_type {
             bindings = <
-       &none      &none  &kp LC(W)  &none      &kp TAB      &kp AT_SIGN  &kp LEFT_BRACKET  &kp ASTERISK     &kp RIGHT_BRACKET      &kp PERCENT
-       &kp LC(Z)  &none  &kp LC(B)  &kp LC(I)  &kp SPACE    &kp HASH     &emdash 0 MINUS   &kp EXCLAMATION  &kp QUESTION           &kp COLON
-&none  &none      &none  &none      &none      &kp ENTER    &kp GRAVE    &kp TILDE         &kp UNDERSCORE   &hmr_r PLUS AMPERSAND  &euro        &none
-                         &none      &none      &none        &kp SPACE    &kp BACKSPACE     &kp DELETE
+       &none      &none     &kp LC(W)  &none      &kp TAB      &kp AT_SIGN  &kp LEFT_BRACKET  &kp ASTERISK     &kp RIGHT_BRACKET      &kp PERCENT
+       &kp LC(Z)  &kp LEFT  &kp LC(B)  &kp RIGHT  &kp SPACE    &kp HASH     &emdash 0 MINUS   &kp EXCLAMATION  &kp QUESTION           &kp COLON
+&none  &none      &none     &kp LC(I)  &none      &kp ENTER    &kp GRAVE    &kp TILDE         &kp UNDERSCORE   &hmr_r PLUS AMPERSAND  &euro        &none
+                            &none      &none      &none        &kp SPACE    &kp BACKSPACE     &kp DELETE
             >;
 
             label = "SYMT";
