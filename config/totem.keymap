@@ -43,7 +43,7 @@
             key-positions = <2 3>;
         };
 
-        F-keys {
+        f_keys {
             bindings = <&tog 5>;
             key-positions = <32 37>;
         };
