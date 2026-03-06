@@ -33,29 +33,19 @@
             bindings = <&kp ESC>;
         };
 
-        lctrl_del {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <35 36>;
-        };
-
-        idea {
-            bindings = <&sl 0>;
-            key-positions = <12 11>;
-        };
-
         copy {
-            bindings = <&kp LC(C)>;
+            bindings = <&kp LG(C)>;
             key-positions = <2 1>;
         };
 
         paste {
-            bindings = <&kp LC(V)>;
+            bindings = <&kp LG(V)>;
             key-positions = <2 3>;
         };
 
-        grayscale {
-            bindings = <&kp LG(LC(C))>;
-            key-positions = <11 12 13>;
+        F-keys {
+            bindings = <&tog 5>;
+            key-positions = <32 37>;
         };
     };
 
@@ -247,11 +237,11 @@
 
             #binding-cells = <2>;
             hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 30 19 9 31 18 29 17 28 16 27 15 26 35 36 37 33>;
+            hold-trigger-key-positions = <5 6 7 8 30 19 9 31 18 29 17 28 16 27 15 26 35 36 37>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <110>;
         };
 
         timeless_hr_r: timeless_hr_r {
@@ -263,9 +253,9 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <14 3 12 2 11 0 10 11 13 14 20 21 22 23 24 25 32 33 34 1 4>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <110>;
         };
     };
 
@@ -277,10 +267,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-       &hmr_l ESCAPE W         &kp L                      &kp Y                          &kp P                        &kp B          &kp Z        &kp F                         &kp O                       &kp U                       &kp SINGLE_QUOTE
-       &timeless_hr_l LCTRL C  &timeless_hr_l LEFT_ALT R  &timeless_hr_l LEFT_COMMAND S  &timeless_hr_l LEFT_SHIFT T  &kp G          &kp M        &timeless_hr_r RIGHT_SHIFT N  &timeless_hr_r RIGHT_GUI E  &timeless_hr_r RIGHT_ALT I  &kp A
-&to 5  &kp Q                   &kp J                      &kp V                          &kp D                        &kp K          &kp X        &kp H                         &kp COMMA                   &kp PERIOD                  &hmr_r BACKSLASH SLASH  &kp SEMICOLON
-                                                          &caps_hold LSHFT 0             &lt 3 TAB                    &lt 2 SPACE    &lt 4 ENTER  &lt 1 BACKSPACE               &lt 6 DELETE
+           &hmr_l ESCAPE W         &kp L                      &kp Y                          &kp P                        &kp B          &kp Z        &kp F                         &kp O                       &kp U                       &kp SINGLE_QUOTE
+           &timeless_hr_l LCTRL C  &timeless_hr_l LEFT_ALT R  &timeless_hr_l LEFT_COMMAND S  &timeless_hr_l LEFT_SHIFT T  &kp G          &kp M        &timeless_hr_r RIGHT_SHIFT N  &timeless_hr_r RIGHT_GUI E  &timeless_hr_r RIGHT_ALT I  &kp A
+&kp GLOBE  &kp Q                   &kp J                      &kp V                          &kp D                        &kp K          &kp X        &kp H                         &kp COMMA                   &kp PERIOD                  &hmr_r BACKSLASH SLASH  &kp SEMICOLON
+                                                              &caps_hold LSHFT 0             &lt 3 TAB                    &lt 2 SPACE    &lt 4 ENTER  &lt 1 BACKSPACE               &lt 6 DELETE
             >;
         };
 
@@ -332,7 +322,7 @@
             bindings = <
        &none  &kp F7  &kp F8  &kp F9  &kp F12    &none  &none      &none     &none        &none
        &none  &kp F4  &kp F5  &kp F6  &kp F11    &none  &sk RSHFT  &sk RGUI  &sk RALT     &sk RCTRL
-&to 0  &none  &kp F1  &kp F2  &kp F3  &kp F10    &none  &none      &none     &bootloader  &sys_reset  &none
+&none  &none  &kp F1  &kp F2  &kp F3  &kp F10    &none  &none      &none     &bootloader  &sys_reset  &none
                       &none   &none   &none      &none  &none      &none
             >;
 
