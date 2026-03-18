@@ -344,10 +344,10 @@
         Factorio {
             label = "Factorio";
             bindings = <
-       &kp ESCAPE        &kp L  &kp Y      &kp P      &kp B        &none  &kp C_VOLUME_DOWN     &kp LA(TAB)                 &kp C_VOLUME_UP       &none
-       &kp LEFT_SHIFT    &kp R  &kp S      &kp T      &kp G        &none  &none                 &timeless_hr_r RIGHT_GUI E  &none                 &none
-&none  &kp LEFT_COMMAND  &kp J  &kp V      &kp D      &kp K        &none  &kp C_BRIGHTNESS_DEC  &none                       &kp C_BRIGHTNESS_INC  &none  &none
-                                &kp SPACE  &mkp RCLK  &mkp LCLK    &none  &none                 &none
+       &kp ESCAPE        &kp L  &kp Y      &kp P     &kp B       &none  &kp C_VOLUME_DOWN     &kp LA(TAB)                 &kp C_VOLUME_UP       &none
+       &kp LEFT_SHIFT    &kp R  &kp S      &kp T     &kp G       &none  &none                 &timeless_hr_r RIGHT_GUI E  &none                 &none
+&none  &kp LEFT_COMMAND  &kp J  &kp V      &kp D     &kp K       &none  &kp C_BRIGHTNESS_DEC  &none                       &kp C_BRIGHTNESS_INC  &none  &none
+                                &kp SPACE  &mkp MB2  &mkp MB1    &none  &none                 &none
             >;
         };
     };
